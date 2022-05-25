@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/menukit.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/glogo-amban.png" />
+
+<meta name="description" content="Gen concept là đơn vị thiết kế và thi công nội thất chuyên nghiệp. Hướng đến không gian nội thất sang trọng và ấm cúng đi kèm giá thành hợp lí nhất. Tự tin đem lại chất lượng sống tốt nhất cho quý khách">
+<meta name="author" content="Gen Concept">
+<meta name="keywords" content="Gen Concept">
+<meta property="og:url" content="http://genconcept.vn/">
+<meta property="og:title" content="Gen Concept - Chuyên thiết kế và thi công nội thất cao cấp">
+<meta property="og:description" content="Gen concept là đơn vị thiết kế và thi công nội thất chuyên nghiệp. Hướng đến không gian nội thất sang trọng và ấm cúng đi kèm giá thành hợp lí nhất. Tự tin đem lại chất lượng sống tốt nhất cho quý khách">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Gen Concept - Chuyên thiết kế và thi công nội thất cao cấp">
+<meta property="og:image" content="https://genconcept.vn/images/glogo-amban.png">
+<title>Gen Concept - Chuyên thiết kế và thi công nội thất cao cấp</title>
+</head>
+<body>
+	<div class="container-fluid" style="height: 100vh">
+		<div class="row desktop" style="height: 100vh">
+			<div class="col-md-6 col-sx-12" style="display: flex; flex-direction: column;align-items: center;justify-content: center; background-color: #000000">
+				<img src="images/logo.png" style="width: 50%; margin-bottom: 50px">
+				<h1 style="font-family: 'Montserrat', sans-serif;color: #f4ddab; margin-bottom: 60px">COMING SOON ...</h1>
+				<div id="demo" style="font-size:30px; font-family: 'Montserrat', sans-serif;color: #fff">
+					<span id="d" style="border: 1px solid #f4ddab; padding: 25px 10px 25px 10px; margin-right: 20px;"></span>
+					<span id="h" style="border: 1px solid #f4ddab; padding: 25px 10px 25px 10px; margin-right: 20px"></span>
+					<span id="m" style="border: 1px solid #f4ddab; padding: 25px 10px 25px 10px; margin-right: 20px"></span>
+					<span id="s" style="border: 1px solid #f4ddab; padding: 25px 10px 25px 10px; margin-right: 20px"></span>
+				</div>
+			</div>
+			<div class="col-md-6 col-sx-12" style="padding:0px; height: 100vh; overflow: hidden;">
+				<img src="images/01.png">
+			</div>
+		</div>
+		<div class="row mobile" style="height: 100vh">
+			<div class="col-12" style="display: flex; flex-direction: column;align-items: center;justify-content: center; background-color: #000000; height: 50%">
+				<img src="images/logo.png" style="width: 60%; margin-bottom: 20px">
+				<h3 style="font-family: 'Montserrat', sans-serif;color: #f4ddab; margin-bottom: 40px">COMING SOON</h3>
+				<div id="demo" style="font-size:12px; font-family: 'Montserrat', sans-serif;color: #fff">
+					<span id="d1" style="border: 1px solid #f4ddab; padding: 25px 10px 25px 10px; margin-right: 20px;"></span>
+					<span id="h1" style="border: 1px solid #f4ddab; padding: 25px 10px 25px 10px; margin-right: 20px"></span>
+					<span id="m1" style="border: 1px solid #f4ddab; padding: 25px 10px 25px 10px; margin-right: 20px"></span>
+					<span id="s1" style="border: 1px solid #f4ddab; padding: 25px 10px 25px 10px;"></span>
+				</div>
+			</div>
+			<div class="col-12" style="padding:0px; width:100%; height: 50%">
+				<img src="images/01.png" style="width:100%;">
+			</div>
+		</div>
+	</div>
+	<script>
+// Set the date we're counting down to
+var countDownDate = new Date("May 20, 2021 12:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  console.log(distance);
+  console.log(distance % (1000 * 60 * 60 * 24));
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  if(days < 10){
+  	document.getElementById("d").innerHTML = "0" + days + " D";
+  	document.getElementById("d1").innerHTML = "0" + days + " D";
+  }else{
+  	document.getElementById("d").innerHTML = days + " D";
+  	document.getElementById("d1").innerHTML = days + " D";
+  }
+  if(hours < 10){
+  	document.getElementById("h").innerHTML = "0" + hours + " H";
+  	document.getElementById("h1").innerHTML = "0" + hours + " H";
+  }else{
+  	document.getElementById("h").innerHTML = hours + " H";
+  	document.getElementById("h1").innerHTML = hours + " H";
+  }
+  if(minutes < 10){
+  	document.getElementById("m").innerHTML = "0" + minutes + " M";
+  	document.getElementById("m1").innerHTML = "0" + minutes + " M";
+  }else{
+  	document.getElementById("m").innerHTML = minutes + " M";
+  	document.getElementById("m1").innerHTML = minutes + " M";
+  }
+  if(seconds < 10){
+  	document.getElementById("s").innerHTML = "0" + seconds + " S";
+  	document.getElementById("s1").innerHTML = "0" + seconds + " S";
+  }else{
+  	document.getElementById("s").innerHTML = seconds + " S";
+  	document.getElementById("s1").innerHTML = seconds + " S";
+  }
+  // document.getElementById("d").innerHTML = days + " D";
+  // document.getElementById("h").innerHTML = hours + " H";
+  // document.getElementById("m").innerHTML = minutes + " M";
+  // document.getElementById("s").innerHTML = seconds + " S";
+  // document.getElementById("d1").innerHTML = days + " D";
+  // document.getElementById("h1").innerHTML = hours + " H";
+  // document.getElementById("m1").innerHTML = minutes + " M";
+  // document.getElementById("s1").innerHTML = seconds + " S";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "Brand Opening";
+  }
+}, 1000);
+</script>
+</body>
